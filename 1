@@ -1,0 +1,48 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "test.h"
+struct node 
+{
+   int value;
+   struct node  *next; 
+
+} typedef elem; 
+
+// typedef struct node  elem;
+
+void insert(elem *node , int  value )
+{
+	    node =  (elem * ) malloc(sizeof( elem));
+	    node->value=1;
+	    node->next=NULL;
+
+
+}
+
+void  find_elem( elem *root , int value )
+{
+   elem *curr=root;
+ 
+	while(curr->next != NULL)
+	{
+	   curr=curr->next;	  
+	}
+  insert(curr->next,5);
+}
+
+int main()
+{
+
+
+  elem * node =  (elem * ) malloc(sizeof( elem));
+              node->value=1;
+	                  node->next=NULL;
+
+//  elem * root =  (elem * ) malloc(sizeof( elem));
+ // root->value=1;
+ // root->next=NULL;
+ // elem *root;
+//  insert(*root, 5);
+ // printf("%d",root->value);
+  return 0;
+}

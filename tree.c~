@@ -1,0 +1,8 @@
+struct node 
+{
+   int value;
+   elem *next; 
+
+} typedef  elem ;
+
+int
